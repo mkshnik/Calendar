@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Calendar"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/mkshnik/CLionProjects/Calendar/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/mkshnik/CLionProjects/Calendar/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/mkshnik/CLionProjects/Calendar/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Calendar">
+				<Option output="/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Calendar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mkshnik/CLionProjects/Calendar/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Makefile&quot;  VERBOSE=1 Calendar"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Calendar/fast">
+				<Option output="/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Calendar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mkshnik/CLionProjects/Calendar/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Makefile&quot;  VERBOSE=1 Calendar/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CAlarm.cpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CAlarm.hpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CApplication.cpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CApplication.hpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CCalendar.cpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CCalendar.hpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CDate.hpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CEvent.cpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CEvent.hpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CMovableEvent.cpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CMovableEvent.hpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CMustDoEvent.hpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/COptionalEvent.hpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CParticipant.cpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CParticipant.hpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CReminder.cpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CReminder.hpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CSaverLoader.cpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CSaverLoader.hpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CScanner.cpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CScanner.hpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CSharedEvent.cpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CSharedEvent.hpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CShowCalendar.cpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CShowCalendar.hpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CStorage.cpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CStorage.hpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CTime.cpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/CTime.hpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/ECalendarTypes.cpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/ECalendarTypes.hpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/ECommands.cpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/ECommands.hpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/ETimeWrapper.cpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/ETimeWrapper.hpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/src/main.cpp">
+			<Option target="Calendar"/>
+		</Unit>
+		<Unit filename="/home/mkshnik/CLionProjects/Calendar/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

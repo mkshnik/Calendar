@@ -1,0 +1,115 @@
+Terminálový kalendář (téma "Plánovací kalendář")
+================================================
+Autor: Mykhailo Kuvshynov
+================================================
+Aplikace pro správu kalendáře s možností vytvářet události a jejich hledání.
+
+Implementujte následující funcionalitu:
+
+denní, týdenní a měsíční zobrazení kalendáře
+vytvářet a spravovat události (čas, místo, datum, účastníci, ...)
+možnost nastavit události opakování (jednou za týden, 14 dní, ...)
+hledat události podle názvu a/nebo místa konání
+hledat nejbližší možný termín a možnost přesouvat události
+exportování a importování událostí
+Použití polymorfismu (doporučené)
+
+druhy událostí: povinná, volitelná, přesunutelná, ...
+strategie přesunů: nejbližší možný (s omezením), nejbližší možný s přesunutím X jiných událostí
+zobrazení kalendáře (denní, týdenní, měsíční)
+formáty exportovaných událostí
+
+===========================
+Doplnění (upřesnění) zadání
+===========================
+
+Hlavním cílem je udělat "kalendář" a provádět s ním operace pomocí unixového terminálu.
+Při prvním spouštění kalendář se zeptá na jméno uživatele, které bude následně používat při nutné
+komunikaci, pak ukáže textový interface bezniho měsíce (ve měsíčním zobrazení).
+
+Manipulovat kalendářem a jeho nastavení uživatel může pomocí následujících příkazů:
+
+> event
+  | parametry:
+  |     -add -> přidá do kalendáře novou událost (zeptá se uživatele na název, datum, čas a typ události)
+  |             dobrovolně uživatel může doplnit místo konání, popis události, opakování, účastníky.
+  |             (pokud událost se stejným názvem už existuje informuje o tom uživatele a ten
+  |             bude moct vybrat jiný název) Pokud uživateli ten nevyhovuje může zadat jiný.
+  |             Poznámka: pokud uživatel nezadá typ události bude defoltne uložena jako 'optional'
+  |             (ostatní druhy událostí jsou 'mustdo', 'movable')
+  |
+  |     -list -> vypíše vsechy událostí/budicky a pripominky (v přítomném a budoucnem času)
+  |
+  \---------------------------------------------------------------------------------------------------------------
+
+> date
+  | parametry:
+  |     -now                  -> vypíše dnešní datum a nadcházející dnešní událostí.
+  |
+  |     -info ['DD.MM.YYYY']  -> vypíše všechny události v den 'DD' 'MM' měsíce v roce 'YYYY'.
+  |
+  |     -month                -> ukaze vsechny udalosti v beznem mesice
+  |
+  |     -week                 -> ukaze vsechny udalosti v beznem tydnu
+  \---------------------------------------------------------------------------------------------------------------
+
+> reminder <nazev> -> zeptá se uživatele na čas a datum a nastavi pripominku.
+
+> remove <name> -> smaže vybranou udalost.
+
+> move <move> -> přesune událost na nasledne vybraný čas a datum nebo na nejblizsi mozny.
+
+> edit <name> -> otevre editor vybrane udalosti.
+
+> export <event name> <file name> -> exportuje vybrabou událost do souboru zadaného parametrem 'filename'.
+
+> info <name> -> vypíše informace o události podle její jména.
+
+> alarm <cas> -> nastaví budík na vybraný datum a cas, potom uzivatel muze nastavit opakování.
+
+> import <filename> -> importuje všechny události ze souboru zadaného parametrem 'filename'.
+
+> save -> uloží kalendář do souboru 'savedata.txt'.
+
+> exit -> ulozi všechny provedené změny a ukončí program.
+
+> help -> vypíše všechny příkazy, které uživatel může použít.
+
+> location <location> -> ukaze vsechny udalosti, ktere probihaji ve vybrane lokalite.
+
+"" - znamená nepovinny parameter.
+
+=============
+Polymorfismus
+=============
+Polymorfismus mám ve tridech CEvent, CMustDoEvent, CMovableEvent, COptionalEvent, CAlarm a CReminder.
+Vyuzivam ho pretizenim abstraktnich method.
+----CEvent je abstraktní třída. Obsahuje virtuální metody SaveEvent, SetDescription a GetInfo.
+    |       
+    |
+    \_____CAlarm je potomkem třídy CEvent. Reprezentuje budík. Nemá ani lokace ani účastníky.
+    |             Může existovat běžně s jinou událostí.
+    |
+    |
+    \_____CReminder je potomkem třídy CEvent. Reprezentuje připomínku. Má lokace a popis a lze je měnit.
+    |                  Může existovat běžně s jinou událostí.
+    |
+    |
+    \
+     \
+      \_____CSharedEvent je potomkem tridy CEvent, reprezentuje udalost, ktera ma navic popis, lokace a ucastniky.
+            |                Navic je abstraktni tridou.
+            |
+            |
+            \_____CMustDoEvent je potomkem třídy CSharedEvent. Reprezentuje událost kterou nelze přesouvat ani menit cokoli.
+            |                               Nemuze existovat bezne s jinou MustDO nebo Movable udalosti
+            |
+            \_____CMovableEvent je potomkem třídy CEvent. Reprezentuje událost, kterou lze přesouvat a menit jeji lokace
+            |                               Nemuze existovat bezne s jinou MustDO nebo Movable udalosti
+            |
+            \_____COptionalEvent je potomkem třídy CEvent. Reprezentuje událost, kterou lze přesouvat a menit skoro cokoli
+            |                     Muze existovat bezne s jinou udalosti
+            |
+            |
+            \________________________________________________________________________________________________________________
+

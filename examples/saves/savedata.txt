@@ -1,0 +1,10 @@
+Albert on Delnicka;FIT CVUT (Thakurova 9);Kyiv;
+Daria:girlfriend;Lisa:?_?;
+2;PA2 semestral project;13:00;18.06.2020;A;N;N;A;1;N;
+1;Bake a cake;19:00;19.06.2020;A;N;A;0;N;A;Casual friday eve...;
+5;Rick and Morty new episode;21:30;19.06.2020;N;
+1;Groceries;15:00;20.06.2020;A;A;Weekly;26.09.2020;N;A;0;N;
+4;Alarm;08:00;21.06.2020;A;Daily;30.06.2020;
+4;21PILOTS NEW ALBUM(?);07:00;22.06.2020;N;
+3;New;13:00;23.05.2021;A;N;N;N;N;
+2;LOC-SOME-RANDOM-NUMBERS;13:37;28.08.2100;A;N;A;1;A;2;A;https://www.youtube.com/watch?v=loOWKm8GW6A;

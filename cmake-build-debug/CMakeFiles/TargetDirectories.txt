@@ -1,0 +1,3 @@
+/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/mkshnik/CLionProjects/Calendar/cmake-build-debug/CMakeFiles/Calendar.dir
