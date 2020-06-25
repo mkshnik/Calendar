@@ -8,6 +8,7 @@ all: compile doc
 compile: dirs $(execute)
 .PHONY: doc
 doc :
+		mkdir doc
 		doxygen examples/doc-tmp
 		mv doc/html/* doc
 
