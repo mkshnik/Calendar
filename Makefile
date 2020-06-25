@@ -57,6 +57,6 @@ run:
 	$(execute)
 
 clean:
-	rm -r $(OBJ) doc/* kuvshmyk
+	rm -r $(OBJ) doc/* doc kuvshmyk
 
 
